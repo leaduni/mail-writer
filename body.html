@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #0a0844;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(10,8,68,0.10);
+            overflow: hidden;
+            font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+        }
+        .banner {
+            background: #0a0844;
+            text-align: center;
+            padding: 32px 0 16px 0;
+        }
+        .banner img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: #a084e8;
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 0;
+            font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+        }
+        .title {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            letter-spacing: 1px;
+            font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+        }
+        .content {
+            padding: 32px 32px 24px 32px;
+            background: #fff;
+        }
+        .content h2 {
+            color: #0a0844;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 0;
+            font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+        }
+        .content p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #a084e8 0%, #f857a6 100%);
+            color: #fff !important;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 14px 36px;
+            border-radius: 30px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(160,132,232,0.10);
+            transition: background 0.2s;
+        }
+        .cta-btn:hover {
+            background: linear-gradient(90deg, #f857a6 0%, #a084e8 100%);
+        }
+        .footer {
+            text-align: center;
+            color: #a084e8;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 18px 0 10px 0;
+            background: #0a0844;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="cid:logo-lead-uni.png" alt="LEAD UNI Banner">
+            <div class="title">LEAD | UNI</div>
+            <div class="subtitle">LEARN. EXPLORE. ASPIRE. DISCOVER</div>
+        </div>
+        <div class="content">
+            <h2>¡Estás a un paso de la excelencia académica!</h2>
+            <p>
+                Hola, <strong>{{nombre}}</strong><br><br>
+                Nos emociona invitarte a agendar tu entrevista para formar parte de <b>LEAD UNI</b>, específicamente en el <b>Pilar de Excelencia Académica</b>.<br><br>
+                Esta es tu oportunidad para demostrar tu pasión por el aprendizaje, tu compromiso y tu potencial para destacar en nuestra comunidad.<br><br>
+                Haz clic en el siguiente botón para elegir el horario que más te convenga:
+            </p>
+            <p style="text-align:center;">
+                <a href="{{CALENDLY_URL}}" class="cta-btn" target="_blank">Agendar Entrevista</a>
+            </p>
+            <p>
+                Si tienes alguna pregunta, no dudes en responder a este correo.<br><br>
+                ¡Esperamos verte pronto y acompañarte en tu camino hacia la excelencia!
+            </p>
+        </div>
+        <div class="footer">
+            <div style="margin-bottom: 8px;">
+                <a href="https://www.instagram.com/lead_uni" target="_blank" style="margin:0 10px; text-decoration:none; display:inline-block; vertical-align:middle;">
+                    <img src="cid:instagram_dark.png" alt="Instagram" width="28" height="28" style="vertical-align:middle;">
+                </a>
+                </a>
+                <a href="https://www.linkedin.com/company/lead-uni" target="_blank" style="margin:0 10px; text-decoration:none; display:inline-block; vertical-align:middle;">
+                    <img src="cid:linkedin.png" alt="LinkedIn" width="28" height="28" style="vertical-align:middle;">
+                </a>
+                <a href="https://github.com/leaduni" target="_blank" style="margin:0 10px; text-decoration:none; display:inline-block; vertical-align:middle;">
+                    <img src="cid:github_dark.png" alt="GitHub" width="28" height="28" style="vertical-align:middle;">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
